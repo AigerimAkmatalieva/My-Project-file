@@ -65,12 +65,11 @@ body {
  padding: 0 15px;
 }
 .navbar {
-  font-family: 'Readex Pro', sans-serif;
   padding: 20px 0;
 }
-.logo  {
-  font-family: 'Permanent Marker', cursive;
- color: white;
+.logo .logo-name  {
+  font-family: 'Akaya Telivigala', cursive;
+ color: orangered;
  font-size: 23px;
 font-weight: 300;
 text-decoration: none;
@@ -101,13 +100,14 @@ padding: 10px 15px;
  .navbar ul li a:hover {
    color: orangered;
  }
- .navbar .active {
+.navbar .active {
   display: inline-block;
   background-color: orangered;
   color: white;
   padding: 10px 15px;
   border: 1px solid orangered ;
   border-radius: 20px;
+  font-family: 'Akaya Telivigala', cursive;
 }
 .navbar .active:hover {
   color: black;
@@ -177,4 +177,46 @@ padding: 10px 15px;
   .navbar ul li a.active {
     display: none;
   }
-}  
+} 
+
+
+.hero-header {
+  background-color: rgb(25, 25, 73);
+}
+.hero-header h1 {
+  font-family: 'Akaya Telivigala', cursive;
+ font-size: 60px;
+ font-weight: 900;
+ color: orangered;
+}
+.hero-header p {
+  font-family: 'Akaya Telivigala', cursive;
+ font-size: 21px;
+ font-weight: 300;
+ color: white;
+}
+.hero-header .active {
+  display: inline-block;
+  background-color: orangered;
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid orangered ;
+  border-radius: 20px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 21px;
+font-weight: 300;
+text-decoration: none;
+}
+.hero-header .active:hover {
+  color: black;
+}
+
+.hero-header img {
+  animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate { 
+  100% { 
+      transform: rotate(360deg); 
+  } 
+}
